@@ -1,0 +1,55 @@
+CASA SANTA RITA — SITE INTERATIVO DO MEMORIAL DESCRITIVO
+=======================================================
+
+O QUE É
+Uma apresentação editorial e interativa do memorial de residência unifamiliar,
+com identidade visual azul-clara inspirada na organização, no uso de cartões e
+na navegação do projeto Kant fornecido como referência visual.
+
+ARQUIVOS
+- index.html         Página inicial do site
+- styles.css         Design responsivo
+- app.js             Interatividade, ambientes e catálogo técnico
+- assets/            Diagramas, cores extraídos do memorial e ícone do site
+
+COMO ABRIR
+1. Descompacte o ZIP em uma pasta.
+2. Abra index.html no Chrome, Edge, Firefox ou outro navegador moderno.
+3. Não mova separadamente as pastas e os arquivos deste pacote.
+
+VERSÃO MAIS SIMPLES
+O arquivo Casa_Santa_Rita_Site_Interativo.html, entregue separadamente,
+contém HTML, estilo, script e imagens embutidos. Basta abrir esse único arquivo.
+
+COMO PUBLICAR
+A pasta do site pode ser publicada em serviços de hospedagem de sites estáticos,
+como Netlify Drop ou GitHub Pages. Para divulgar um link público, hospede o conteúdo;
+o endereço local do arquivo não funciona para outras pessoas.
+
+FUNCIONALIDADES
+- Navegação por seções
+- Abas e fichas para sete ambientes
+- Quatro conjuntos de materiais, com imagens do memorial original
+- Catálogo com 50 especificações pesquisáveis por termo e categoria
+- Modo de apresentação em seis slides e controles por teclado
+- Copiar ficha, compartilhar endereço (após hospedagem) e imprimir/salvar em PDF
+- Layout adaptado para celular
+
+FONTES E LIMITAÇÕES
+Conteúdo de referência: "Caio e Nicole PCO(2).docx", datado de 19/10/2026.
+Estilo inspirado no arquivo Kant_modular_v3_11_1_laboratorio_polido_niveis(3).zip.
+A ilustração da casa é conceitual, NÃO é a fachada nem um render fiel do projeto.
+O site não comprova que a obra foi iniciada ou concluída.
+Todos os valores, marcas e normas mencionados são referências do documento
+original e precisam ser validados com os projetos executivos e responsáveis técnicos.
+
+VERIFICAÇÕES ANTES DE PUBLICAR / CONTRATAR
+- O memorial indica taxa de ocupação de 23,3%, mas 70,75 / 300 = 23,58%,
+  SE a área construída também representar a projeção horizontal ocupada.
+- A cor das soleiras consta como Branco Siena e Cinza Corumbá em seções diferentes.
+- Confirmar nomes, registros profissionais, localização e situação do projeto.
+- O CPF do proprietário foi propositalmente omitido do site.
+- A localização apresentada é apenas bairro/cidade, sem número da residência.
+
+O site é editável. As informações técnicas estão em app.js, enquanto a identidade
+visual pode ser modificada no arquivo styles.css.

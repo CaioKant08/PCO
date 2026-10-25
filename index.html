@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f9ff">
+  <meta name="description" content="Casa Santa Rita: apresentação interativa do projeto residencial, ambientes, materiais e memorial descritivo de obra em Vila Valério, Espírito Santo.">
+  <title>Casa Santa Rita | Caderno de projeto</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+ <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+ <div class="page-shell">
+  <header class="site-header" id="inicio">
+    <div class="header-inner frame">
+      <a class="logo" href="#inicio" aria-label="Casa Santa Rita - início">
+        <span class="logo-mark"><svg width="29" height="29" viewBox="0 0 30 30" fill="none" aria-hidden="true"><path d="m3.5 15 11.5-10 11.5 10" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 12.5V25h16V12.5M12 25v-7h6v7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="logo-text"><strong>casa<span class="logo-dot">.</span> santa rita</strong><small>Caderno do projeto</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a class="nav-item is-active" href="#conceito">O projeto</a><a class="nav-item" href="#ambientes">Ambientes</a><a class="nav-item" href="#materiais">Materiais</a><a class="nav-item" href="#tecnico">Memorial técnico</a><a class="nav-item" href="#identidade">Identidade</a>
+      </nav>
+      <div class="head-actions"><button class="icon-btn mobile-menu" type="button" id="menuToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Abrir menu"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><button class="button button-dark header-present" data-presentation>Apresentar <span aria-hidden="true">↗</span></button></div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Menu para celular" hidden><a href="#conceito">O projeto</a><a href="#ambientes">Ambientes</a><a href="#materiais">Materiais</a><a href="#tecnico">Memorial técnico</a><a href="#identidade">Identidade</a></nav>
+  </header>
+  <main id="conteudo">
+    <section class="hero frame" aria-labelledby="hero-title">
+      <div class="hero-panel">
+        <div class="hero-left">
+          <div class="eyebrow"><span class="eyebrow-symbol">✳</span> PROJETO RESIDENCIAL · VILA VALÉRIO / ES</div>
+          <h1 id="hero-title">O essencial.<br><em>Bem pensado.</em></h1>
+          <p class="hero-subtitle">Uma residência térrea apresentada com clareza, sensibilidade e atenção aos detalhes. Conheça os espaços, descubra os materiais e explore cada escolha técnica.</p>
+          <div class="hero-actions"><a href="#conceito" class="button button-primary">Explorar o projeto <span aria-hidden="true">↗</span></a><button type="button" class="button button-light" data-presentation>Iniciar apresentação <span aria-hidden="true">▶</span></button></div>
+          <div class="hero-foot"><span class="tiny-line"></span><span>Um memorial que você pode realmente explorar.</span></div>
+        </div>
+        <div class="hero-art" role="img" aria-label="Ilustração conceitual arquitetônica de uma residência térrea, em tons de azul claro; não representa a fachada real do projeto">
+          <div class="art-grid"></div>
+          <svg viewBox="0 0 620 540" class="house-illustration" aria-hidden="true">
+            <defs>
+             <linearGradient id="wallGrad" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fcfdff"/><stop offset="1" stop-color="#d8e8f6"/></linearGradient>
+             <linearGradient id="roofGrad" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#97bbd6"/><stop offset="1" stop-color="#6b9dbb"/></linearGradient>
+             <linearGradient id="glassGrad" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#a2d0e3"/><stop offset="1" stop-color="#f5fbff"/></linearGradient>
+             <filter id="shade" x="-20%" y="-20%" width="150%" height="150%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#3a6b9e" flood-opacity=".13"/></filter>
+            </defs>
+            <ellipse cx="326" cy="441" rx="252" ry="30" fill="#5b8aaf" opacity=".12"/>
+            <path d="M115 257 309 131 505 263 505 419 115 419Z" fill="url(#wallGrad)" stroke="#6f9ab6" stroke-width="2.2" filter="url(#shade)"/>
+            <path d="M85 274 306 125 541 274 513 284 309 151 114 284Z" fill="url(#roofGrad)" stroke="#47799a" stroke-width="2.2" stroke-linejoin="round"/>
+            <path d="M115 284 308 151 504 284" fill="none" stroke="#d3e7f3" stroke-width="3" opacity=".7"/>
+            <path d="M198 315h111v104H198z" fill="url(#glassGrad)" stroke="#638eaa" stroke-width="5"/>
+            <path d="M253 316v103M198 368h111" stroke="#709bb4" stroke-width="4"/>
+            <path d="M347 298h89v121h-89z" fill="#deedf6" stroke="#658eac" stroke-width="5"/>
+            <path d="M353 305h77v105h-77z" fill="url(#glassGrad)" stroke="#e5f2fb" stroke-width="1"/>
+            <path d="M359 311v94" stroke="#7ca7bf" stroke-width="2"/>
+            <circle cx="419" cy="358" r="4" fill="#477d9e"/>
+            <path d="M122 419h382" stroke="#537c9c" stroke-width="5"/>
+            <path d="M60 427h503" stroke="#b3d1e3" stroke-width="2"/><path d="M98 441h444" stroke="#c2daea" stroke-width="2"/>
+            <g stroke="#a0bfd1" opacity=".8" fill="none"><path d="M63 249 309 89 558 251" stroke-dasharray="5 9"/><path d="M75 453v18M540 453v18"/><path d="M75 461h465"/><path d="M75 456l-8 5 8 5M540 456l8 5-8 5"/></g>
+            <text x="307" y="488" text-anchor="middle" fill="#799ab1" font-family="Arial,sans-serif" font-size="13" letter-spacing="3">ESTUDO CONCEITUAL · SEM ESCALA</text>
+            <g transform="translate(122 384)"><path d="M0 30q-15-26 0-48 17 21 0 48" fill="#81bda9" opacity=".7"/><path d="M0 30q24-34 26-7-3 20-26 7" fill="#5ea7a8" opacity=".6"/><path d="M0 28v34" stroke="#669b87" stroke-width="3"/></g>
+            <g transform="translate(499 381)"><path d="M0 30q-15-26 0-48 17 21 0 48" fill="#81bda9" opacity=".8"/><path d="M0 30q24-34 26-7-3 20-26 7" fill="#6caeb4" opacity=".65"/><path d="M0 28v32" stroke="#669b87" stroke-width="3"/></g>
+           </svg>
+          <div class="art-floating art-floating-top"><span class="float-dot"></span><span>RESIDÊNCIA UNIFAMILIAR<br><strong>01 PAVIMENTO</strong></span></div>
+          <div class="art-floating art-floating-bottom"><span class="float-icon">⌗</span><span>PROJETO + MATERIAIS<br><strong>EM UM SÓ LUGAR</strong></span></div>
+        </div>
+      </div>
+      <div class="stat-row" aria-label="Indicadores principais do projeto">
+        <div class="stat"><strong>70,75<span>m²</span></strong><span>Área construída prevista</span></div>
+        <div class="stat"><strong>300<span>m²</span></strong><span>Área total do lote</span></div>
+        <div class="stat"><strong>03<span>qts.</span></strong><span>Quartos previstos</span></div>
+        <div class="stat"><strong>213,96<span>m²</span></strong><span>Área permeável indicada</span></div>
+      </div>
+      <p class="caption stat-note">Dados conforme memorial descritivo de 19/10/2026. O conteúdo apresenta especificações de projeto, não comprova obra executada.</p>
+    </section>
+
+    <section class="section frame" id="conceito" aria-labelledby="conceito-title">
+      <div class="section-heading"><div><div class="kicker"><span>01</span> A ESSÊNCIA</div><h2 id="conceito-title">Mais do que metragem.<br><span>Uma ideia de morar.</span></h2></div><p>Uma leitura acolhedora de um projeto técnico: cada escolha aparece de forma acessível, sem esconder as informações que importam.</p></div>
+      <div class="concept-grid">
+        <div class="concept-feature card-surface">
+         <div class="concept-illustration"><div class="sun-orb"></div><div class="concept-outline"><div class="concept-roof"></div><div class="concept-door"></div><div class="concept-window"></div></div><span class="ghost-number">01 / 04</span></div>
+         <div class="concept-copy"><span class="micro-label">UMA CASA PENSADA PARA O COTIDIANO</span><h3>Viver bem também é viver com simplicidade.</h3><p>O projeto reúne três quartos, sala, cozinha, banheiro e hall em um único pavimento, oferecendo uma organização residencial objetiva, com especificações de materiais e sistemas documentadas.</p></div>
+        </div>
+        <div class="concept-small-grid"><article class="mini-feature card-surface"><span class="line-icon">◫</span><div><h3>Casa térrea</h3><p>Um pavimento, com ambientes identificados individualmente.</p></div><span class="mini-number">01</span></article><article class="mini-feature card-surface"><span class="line-icon">⌂</span><div><h3>Cobertura colonial</h3><p>Telhas cerâmicas capa-canal e estrutura de madeira especificada.</p></div><span class="mini-number">02</span></article><article class="mini-feature card-surface"><span class="line-icon">▦</span><div><h3>Materiais definidos</h3><p>Paginação de pisos, revestimentos, cores e esquadrias previstas.</p></div><span class="mini-number">03</span></article><article class="mini-feature card-surface"><span class="line-icon">◌</span><div><h3>Área permeável</h3><p>213,96 m² indicados no memorial, correspondentes a 71,32% do lote.</p></div><span class="mini-number">04</span></article></div>
+      </div>
+      <div class="implantation card-surface">
+        <div class="implantation-text"><div class="mini-kicker">O TERRENO · EM NÚMEROS</div><h3>Espaço para respirar.</h3><p>O lote informado tem 300 m². A implantação registra afastamentos de 7,35 m nas divisas frontal e de fundos e de 2,35 m nas divisas laterais. A posição final da edificação depende da planta aprovada.</p><div class="implantation-tags"><span>Frente <strong>7,35 m</strong></span><span>Fundos <strong>7,35 m</strong></span><span>Laterais <strong>2,35 m</strong></span></div><span class="caption">Esquema apenas explicativo; não representa proporções, medidas ou localização real de aberturas.</span></div>
+        <div class="plot-graphic" role="img" aria-label="Diagrama abstrato de lote com área construída ilustrativa, sem escala e sem representação exata da implantação"><div class="lot-outline"><span class="label-lot">LOTE · 300 m²</span><span class="setback setback-top">7,35 m</span><span class="setback setback-bottom">7,35 m</span><span class="setback setback-left">2,35 m</span><span class="setback setback-right">2,35 m</span><div class="lot-building"><span>EDIFICAÇÃO</span><strong>70,75 m²</strong><small>área construída indicada</small></div></div></div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="ambientes" aria-labelledby="ambientes-title">
+      <div class="frame"><div class="section-heading"><div><div class="kicker"><span>02</span> AMBIENTES</div><h2 id="ambientes-title">Cada espaço tem<br><span>seu lugar.</span></h2></div><p>Conheça os ambientes previstos e suas metragens. Selecione um cômodo para ver os acabamentos associados ao memorial.</p></div>
+       <div class="rooms-toolbar"><div class="filter-tabs" id="roomFilters" role="group" aria-label="Filtrar ambientes"><button class="filter-tab active" data-room-filter="todos" aria-pressed="true">Todos os espaços</button><button class="filter-tab" data-room-filter="intimos" aria-pressed="false">Íntimos</button><button class="filter-tab" data-room-filter="sociais" aria-pressed="false">Sociais</button><button class="filter-tab" data-room-filter="apoio" aria-pressed="false">Apoio</button></div><span class="room-count" id="roomCount">07 ambientes</span></div>
+       <div class="room-grid" id="roomGrid"></div>
+       <div class="rooms-footer"><div class="area-breakdown"><div class="area-label"><span>Áreas dos cômodos listados</span><strong>60,95 m²</strong></div><div class="area-track"><span class="area-social" style="width:46.99%"></span><span class="area-intimate" style="width:44.12%"></span><span class="area-support" style="width:8.88%"></span></div><div class="area-legend"><span><i class="key key-social"></i> Sala e cozinha</span><span><i class="key key-intimate"></i> Quartos</span><span><i class="key key-support"></i> Banheiro e hall</span></div></div><p class="caption">A soma das áreas dos ambientes informados (60,95 m²) não corresponde à área construída total (70,75 m²), que pode incluir paredes e outros componentes. A diferença precisa ser lida em conjunto com a planta arquitetônica.</p></div>
+      </div>
+    </section>
+
+    <section class="section frame" id="materiais" aria-labelledby="materiais-title">
+      <div class="section-heading"><div><div class="kicker"><span>03</span> O CADERNO DE MATERIAIS</div><h2 id="materiais-title">A materialidade<br><span>faz a diferença.</span></h2></div><p>Um panorama visual de superfícies, tonalidades, revestimentos e detalhes especificados. Os exemplos são referências do memorial, não imagens da obra finalizada.</p></div>
+      <div class="material-tabs" id="materialTabs" role="tablist" aria-label="Categorias de materiais"><button class="material-tab selected" role="tab" aria-selected="true" data-material="cores">Paleta de pintura</button><button class="material-tab" role="tab" aria-selected="false" data-material="pisos">Pisos & soleiras</button><button class="material-tab" role="tab" aria-selected="false" data-material="paredes">Paredes & cerâmica</button><button class="material-tab" role="tab" aria-selected="false" data-material="esquadrias">Portas & janelas</button></div>
+      <div class="material-stage card-surface" id="materialStage" role="tabpanel"></div>
+    </section>
+
+    <section class="section section-soft" id="tecnico" aria-labelledby="tecnico-title">
+     <div class="frame"><div class="section-heading"><div><div class="kicker"><span>04</span> TRANSPARÊNCIA TÉCNICA</div><h2 id="tecnico-title">O projeto, sem<br><span>letras miúdas.</span></h2></div><p>As soluções construtivas do memorial em uma biblioteca organizada, com busca e filtros. Abra os itens para conhecer medidas, materiais e orientações de execução.</p></div>
+      <div class="tech-card card-surface">
+       <div class="tech-controls"><label class="searchbox" for="techSearch"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.7"/><path d="m16 16 5 5"/></svg><input id="techSearch" type="search" placeholder="Busque por radier, pintura, PVC, elétrica..." autocomplete="off"></label><button class="button button-subtle" type="button" id="expandVisible">Expandir todos <span aria-hidden="true">⌄</span></button></div>
+       <div class="tech-categories" id="techCategories" role="group" aria-label="Filtrar categorias do memorial"></div>
+       <div class="tech-summary"><strong id="techCounter">Carregando especificações...</strong><span>Informações originadas do memorial de obra enviado.</span></div>
+       <div class="tech-list" id="techList"></div>
+       <div class="tech-empty" id="techEmpty" hidden>Nenhuma especificação encontrada. Tente outro termo ou selecione outra categoria.</div>
+      </div>
+     </div>
+    </section>
+
+    <section class="section frame" id="etapas" aria-labelledby="etapas-title"><div class="section-heading"><div><div class="kicker"><span>05</span> DO PROJETO À EXECUÇÃO</div><h2 id="etapas-title">Rigor em todas<br><span>as etapas.</span></h2></div><p>Além da escolha dos acabamentos, o memorial registra compromissos de implantação, documentação e entrega da obra.</p></div>
+     <div class="process-grid"><article class="process-card"><span class="process-number">01</span><div class="process-line"></div><h3>Planejamento</h3><p>Compatibilização da arquitetura com os projetos estrutural, elétrico e hidrossanitário, além das licenças aplicáveis.</p></article><article class="process-card"><span class="process-number">02</span><div class="process-line"></div><h3>Preparação</h3><p>Fechamento da obra, placa de identificação, instalações provisórias e locação conferida pelo responsável técnico.</p></article><article class="process-card"><span class="process-number">03</span><div class="process-line"></div><h3>Execução</h3><p>Aplicação dos sistemas estruturais, vedações, instalações e acabamentos previstos, com verificação conforme projetos executivos.</p></article><article class="process-card"><span class="process-number">04</span><div class="process-line"></div><h3>Entrega</h3><p>Limpeza interna e externa, remoção de resíduos e checagem dos componentes instalados antes do encerramento.</p></article></div>
+    </section>
+
+    <section class="section frame identity-section" id="identidade" aria-labelledby="identidade-title">
+      <div class="identity card-surface"><div class="identity-head"><div><div class="kicker"><span>06</span> IDENTIDADE DA APRESENTAÇÃO</div><h2 id="identidade-title">Um jeito leve<br><span>de apresentar o técnico.</span></h2><p>Criamos uma linguagem visual editorial em azuis suaves, superfícies claras e traços arquitetônicos. A paleta abaixo é a identidade deste site; não substitui as cores de tinta escolhidas para a residência.</p></div><span class="identity-seal">CASA<br>SR<span>✳</span></span></div><div class="identity-swatches"><div class="identity-swatch"><span style="background:#f5f9ff"></span><strong>Ar</strong><small>#F5F9FF</small></div><div class="identity-swatch"><span style="background:#e5f2fc"></span><strong>Nuvem</strong><small>#E5F2FC</small></div><div class="identity-swatch"><span style="background:#b8d8ee"></span><strong>Horizonte</strong><small>#B8D8EE</small></div><div class="identity-swatch"><span style="background:#428fcb"></span><strong>Céu profundo</strong><small>#428FCB</small></div><div class="identity-swatch"><span style="background:#17364f"></span><strong>Atlântico</strong><small>#17364F</small></div></div><div class="identity-footer"><div><span class="identity-type-serif">Forma &amp; função.</span><span class="identity-type-sans">Detalhes que contam uma história.</span></div><span class="caption">Identidade editorial criada para esta apresentação, sem registro de marca.</span></div></div>
+    </section>
+
+    <section class="frame final-section" id="compartilhar"><div class="final-banner"><div><div class="eyebrow eyebrow-invert">SEU PROJETO, EM DETALHES</div><h2>Conhecer é<br><em>o primeiro passo.</em></h2><p>Uma visão completa da residência, das escolhas de acabamento às especificações que dão forma ao projeto.</p></div><div class="final-actions"><button class="button button-white" id="copySummary">Copiar ficha do imóvel <span aria-hidden="true">⧉</span></button><button class="button button-outline-white" type="button" id="printPage">Salvar / imprimir em PDF <span aria-hidden="true">↗</span></button><button class="button button-outline-white" id="shareSite">Compartilhar este site <span aria-hidden="true">↗</span></button></div></div>
+      <div class="review-note"><div class="review-icon">!</div><div><strong>Notas de conferência antes da publicação definitiva</strong><p>A taxa de ocupação consta como 23,3% no memorial, enquanto 70,75 m² ÷ 300,00 m² resulta em aproximadamente 23,58%, se a área construída corresponder à projeção ocupada. Também há duas referências para as soleiras: Branco Siena e Cinza Corumbá. Estes pontos devem ser confirmados com a planta e os responsáveis técnicos. O site não publica o CPF do proprietário.</p></div></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="frame footer-grid"><div><a class="footer-brand" href="#inicio">casa<span>.</span> santa rita</a><p>Apresentação editorial do memorial descritivo de residência unifamiliar. Santa Rita, Vila Valério — ES.</p></div><div><strong>EXPLORAR</strong><a href="#conceito">O projeto</a><a href="#ambientes">Ambientes</a><a href="#materiais">Materiais</a><a href="#tecnico">Memorial técnico</a></div><div><strong>DOCUMENTAÇÃO</strong><span>Proprietário informado: José Roberto Gonçalves</span><span>Memorial datado de 19 out. 2026</span><span>Autoria indicada: Caio da Silva Dias Cavalcanti e Nicole Dias Leite Gonçalves</span><span>Registros informados: CREA-ES/D 4794-6 e 3983-9 — sujeitos à conferência</span></div></div><div class="frame footer-bottom"><span>© 2026 · Apresentação de projeto · Casa Santa Rita</span><span>Imagens conceituais não representam obra executada.</span></div></footer>
+ </div>
+ <div class="toast" id="toast" role="status" aria-live="polite"></div>
+ <dialog class="room-dialog" id="roomDialog" aria-labelledby="dialogRoomTitle"><button type="button" class="dialog-close" id="closeRoom" aria-label="Fechar detalhes">×</button><div id="roomDialogContent"></div></dialog>
+ <div class="presentation" id="presentation" role="dialog" aria-modal="true" aria-label="Modo de apresentação" hidden><button class="presentation-close" id="closePresentation" aria-label="Fechar apresentação">✕</button><div class="presentation-brand">CASA<span>.</span> SANTA RITA <small>APRESENTAÇÃO DO PROJETO</small></div><div class="presentation-content" id="presentationContent"></div><div class="presentation-controls"><span id="slideCount">01 / 06</span><div class="presentation-progress"><span id="presentationProgress"></span></div><button type="button" id="previousSlide" aria-label="Slide anterior">←</button><button type="button" id="nextSlide" aria-label="Próximo slide">→</button></div></div>
+</body>
+</html>
